@@ -1,7 +1,16 @@
-body{
-    background-color: blue;
-}
-h1{
 
-    color:aliceblue;
-}
+    body {  
+        display: flex;  
+        align-items: center; /* Centra verticalmente */  
+        justify-content: center; /* Centra horizontalmente */  
+        height: 100vh; /* Ocupa toda la altura de la ventana */  
+        margin: 0;  
+        background-color: #f0f0f0; /* Color de fondo */  
+        font-family: Arial, sans-serif; /* Fuente */  
+    }  
+    
+    #texto {  
+        transform: translateY(50px); /* Comienza desplazado hacia abajo */  
+        opacity: 0; /* Inicialmente invisible */  
+        transition: transform 1s ease, opacity 1s ease; /* Transiciones para la posición y opacidad */  
+    }
